@@ -8,7 +8,7 @@ RUN useradd -ms /bin/bash monero
 USER monero
 WORKDIR /home/monero
 
-RUN wget https://github.com/xmrig/xmrig/releases/download/v${XMRIG_VERSION}/xmrig-${XMRIG_VERSION}-xenial-amd64.tar.gz &&\
+RUN wget https://github.com/xmrig/xmrig/releases/download/v${XMRIG_VERSION}/xmrig-${XMRIG_VERSION}-xenial-x64.tar.gz &&\
   tar -xvzf xmrig-${XMRIG_VERSION}-xenial-amd64.tar.gz &&\
   mv xmrig-${XMRIG_VERSION}/xmrig . &&\
   rm -rf xmrig-${XMRIG_VERSION} &&\
